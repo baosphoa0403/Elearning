@@ -38,7 +38,8 @@
     "no-return-await": "error",
     "no-unused-vars": "warn",
     "no-var": "error",
-    "func-style": [2, "expression", { "allowArrowFunctions": true }]
+    "func-style": [2, "expression", { "allowArrowFunctions": true }],
     // "typescript/camelcase": ["error", { "properties": "always" }]
+    "jsx-quotes": [2, "prefer-single"]
   }
 }

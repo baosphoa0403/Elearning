@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Demo from './Demo/Demo';
 
 const App = () => {
   const callAPI = () => {
@@ -41,6 +42,7 @@ const App = () => {
           }}>
           Click
         </button>
+        <Demo name='bao' />
       </header>
     </div>
   );
