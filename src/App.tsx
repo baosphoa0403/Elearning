@@ -39,7 +39,7 @@ const App = () => {
           type='submit'
           className='btn btn-danger'
           onClick={() => {
-            alert('hello world');
+            alert('hello world gia bảo');
           }}>
           Click
         </button>
