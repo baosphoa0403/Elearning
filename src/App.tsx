@@ -34,6 +34,7 @@ const App = () => {
         <a className='App-link' href='https://reactjs.org' target='_blank' rel='noopener noreferrer'>
           Learn React
         </a>
+        <h1>bảo đẹp trai qá anh em :)) </h1>
         <button
           type='submit'
           className='btn btn-danger'
