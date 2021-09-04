@@ -4,22 +4,22 @@ import './App.css';
 import Demo from './Demo/Demo';
 
 const App = () => {
-  const callAPI = () => {
-    setTimeout(() => {
-      alert('hello');
-    }, 500);
+  //   const callAPI = () => {
+  //     setTimeout(() => {
+  //       alert('hello');
+  //     }, 500);
 
-    // console.log(abc1);
-  };
-  const abc = { name: 'bao', age: 'abc' };
-  const abc1 = 3;
-  //   var myFavoriteColor = '#112C85';
-  const hello = async (hello1: string) => {
-    if (hello1 === 'abc') {
-    }
-    const x = await callAPI();
-    return x;
-  };
+  //     // console.log(abc1);
+  //   };
+  //   const abc = { name: 'bao', age: 'abc' };
+  //   const abc1 = 3;
+  //   //   var myFavoriteColor = '#112C85';
+  //   const hello = async (hello1: string) => {
+  //     if (hello1 === 'abc') {
+  //     }
+  //     const x = await callAPI();
+  //     return x;
+  //   };
 
   // const array = [1, 3,]
   return (
@@ -29,18 +29,13 @@ const App = () => {
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
-        {abc.name}
+        {/* {abc.name} */}
         <p></p>
         <a className='App-link' href='https://reactjs.org' target='_blank' rel='noopener noreferrer'>
           Learn React
         </a>
         <h1>bảo đẹp trai qá anh em :)) nha </h1>
-        <button
-          type='submit'
-          className='btn btn-danger'
-          onClick={() => {
-            alert('hello world gia bảo');
-          }}>
+        <button type='submit' className='btn btn-danger'>
           Click
         </button>
         <Demo name='bao' />
