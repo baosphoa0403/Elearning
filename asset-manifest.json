@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/ShoppingLaptop/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/ShoppingLaptop/static/js/main.da4a5177.chunk.js",
-    "main.js.map": "/ShoppingLaptop/static/js/main.da4a5177.chunk.js.map",
+    "main.js": "/ShoppingLaptop/static/js/main.d215b791.chunk.js",
+    "main.js.map": "/ShoppingLaptop/static/js/main.d215b791.chunk.js.map",
     "runtime-main.js": "/ShoppingLaptop/static/js/runtime-main.448c1dea.js",
     "runtime-main.js.map": "/ShoppingLaptop/static/js/runtime-main.448c1dea.js.map",
     "static/js/2.62f45acb.chunk.js": "/ShoppingLaptop/static/js/2.62f45acb.chunk.js",
@@ -16,6 +16,6 @@
     "static/js/runtime-main.448c1dea.js",
     "static/js/2.62f45acb.chunk.js",
     "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.da4a5177.chunk.js"
+    "static/js/main.d215b791.chunk.js"
   ]
 }
