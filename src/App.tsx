@@ -35,12 +35,7 @@ const App = () => {
           Learn React
         </a>
         <h1>bảo đẹp trai qá anh em :)) nha hí hí </h1>
-        <button
-          type='submit'
-          className='btn btn-danger'
-          onClick={() => {
-            alert('hello');
-          }}>
+        <button type='submit' className='btn btn-danger'>
           Click show menu
         </button>
         <Demo name='bao' />
