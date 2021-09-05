@@ -21,7 +21,7 @@ const App = () => {
   //     return x;
   //   };
 
-  // const array = [1, 3,]
+  //   const array = [1, 3];
   return (
     <div className='App'>
       <header className='App-header'>
@@ -35,8 +35,13 @@ const App = () => {
           Learn React
         </a>
         <h1>bảo đẹp trai qá anh em :)) nha hí hí </h1>
-        <button type='submit' className='btn btn-danger'>
-          Click
+        <button
+          type='submit'
+          className='btn btn-danger'
+          onClick={() => {
+            alert('hello');
+          }}>
+          Click show menu
         </button>
         <Demo name='bao' />
       </header>
