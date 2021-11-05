@@ -1,46 +1,97 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Demo from './Demo/Demo';
+import { Button, createTheme, CssBaseline, Switch, ThemeProvider } from '@material-ui/core';
+import UseDarkMode from './hooks/UseDarkMode';
+// import { darkTheme, lightTheme } from './config/ThemeConfig';
+// import { darkTheme } from './config/ThemeConfig';
 
 const App = () => {
-  //   const callAPI = () => {
-  //     setTimeout(() => {
-  //       alert('hello');
-  //     }, 500);
+  const [flag, setFlag] = React.useState<boolean>(false);
+  const baseTheme = createTheme({
+    typography: {
+      fontFamily: "'Work Sans', sans-serif",
+      fontSize: 14
+    }
+  });
+  const theme = createTheme({
+    ...baseTheme,
+    palette: {
+      type: flag ? 'dark' : 'light',
+      primary: {
+        main: flag ? '#26a27b' : '#fafafa'
+      },
+      secondary: {
+        main: flag ? '#fafafa' : '#26a27b'
+      }
+    }
+  });
+  const lightTheme = createTheme({
+    spacing: 4,
+    palette: {
+      type: 'light',
+      primary: {
+        main: '#26a27b'
+      },
+      secondary: {
+        main: '#fafafa'
+      }
+    },
+    typography: {
+      fontFamily: 'Roboto',
+      fontSize: 14
+    }
+  });
+  const darkTheme = createTheme({
+    palette: {
+      type: 'dark',
+      primary: {
+        main: '#fafafa'
+      },
+      secondary: {
+        main: '#26a27b'
+      }
+    },
+    typography: {
+      fontFamily: 'Roboto',
+      fontSize: 14
+    }
+  });
+  //   console.log(flag ? darkTheme : lightTheme);
 
-  //     // console.log(abc1);
-  //   };
-  //   const abc = { name: 'bao', age: 'abc' };
-  //   const abc1 = 3;
-  //   //   var myFavoriteColor = '#112C85';
-  //   const hello = async (hello1: string) => {
-  //     if (hello1 === 'abc') {
-  //     }
-  //     const x = await callAPI();
-  //     return x;
-  //   };
-
-  //   const array = [1, 3];
   return (
-    <div className='App'>
-      <header className='App-header'>
-        <img src={logo} className='App-logo' alt='logo' />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        {/* {abc.name} */}
-        <p></p>
-        <a className='App-link' href='https://reactjs.org' target='_blank' rel='noopener noreferrer'>
-          Learn React
-        </a>
-        <h1>bảo đẹp trai qá anh em :)) nha hí hí </h1>
-        <button type='submit' className='btn btn-danger'>
-          Click show menu
-        </button>
-        <Demo name='bao' />
-      </header>
-    </div>
+    <ThemeProvider theme={flag ? darkTheme : lightTheme}>
+      <button type='submit' className='btn btn-danger'>
+        Click show menu
+      </button>
+      <Demo name='bao' />
+      <Button color='primary' variant='contained'>
+        {' '}
+        primary
+      </Button>
+      <Button color='secondary' variant='contained'>
+        {' '}
+        secondary
+      </Button>
+      <Button
+        variant='contained'
+        onClick={() => {
+          alert('hello');
+        }}>
+        Default
+      </Button>
+      <Switch
+        checked={flag}
+        onChange={() => {
+          setFlag(!flag);
+        }}
+        name='checkedA'
+        inputProps={{ 'aria-label': 'secondary checkbox' }}
+      />
+      {flag ? 'hiếu' : 'lok'}
+      <Demo name='bảo' />
+      <CssBaseline />
+    </ThemeProvider>
   );
 };
 
